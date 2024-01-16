@@ -11,6 +11,6 @@ def test_search_text_two(options_browser):
     browser.element('#botstuff > div > div.mnr-c > div > p:nth-child(1)').should(have.text('ничего не найдено.'))
     #testnewbranch
 def test_search_text_three(options_browser):
-    browser.open('https://www.bing.com/')
+    browser.open('https://yandex.ru')
     browser.element('[name="text"]').should(be.blank).type('yashaka/selene').press_enter()
     browser.element('[class="serp-item"]').should(have.text('User-oriented Web UI browser tests in Python. Contribute to yashaka/selene development by'))
